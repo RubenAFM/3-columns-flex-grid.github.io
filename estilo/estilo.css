@@ -1,0 +1,139 @@
+:root {
+             /*Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+
+             /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;    
+    color: var(--transparent-white);
+    line-height: 1.5;
+    
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    padding: 1rem;
+    max-width: 760px;    
+   
+}
+
+figure {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.sedans__container {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0px 0px;
+    padding: 2rem 2rem 0rem 2rem;
+    color: var(--bright-orange);
+    
+}
+
+.suvs__container {
+    background-color: var(--dark-cyan);
+    padding: 2rem;
+    color: var(--dark-cyan);
+    
+}
+
+.luxury__container {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 0px 10px 10px;
+    padding: 2rem;
+    color: var(--very-dark-cyan);   
+    
+}
+
+p {
+    text-align: justify;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        height: 100vh;
+
+    }  
+    main {
+        width: 100vh;
+        height: 500px;               
+        display: grid;
+        grid-template-columns: repeat( 3, 280px);
+        
+      
+           
+    }
+
+    .sedans__container {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .luxury__container {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+h1, h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+}
+
+button {
+    all: unset;
+    max-width: 250px;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+    background: var(--very-light-gray);
+    border-radius: 30px;
+}
+
+.attribution {
+    margin-top: 0px;
+    padding-top: 0px;
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+    background-color: var(--bright-orange);
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+.attribution:hover {
+    background: violet;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--very-dark-cyan);
+}
